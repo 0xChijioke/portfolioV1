@@ -16,11 +16,14 @@ function Hero({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
-        <Image src={placeHolderImage} width={300} height={300} />
-        <h1>
-            <span>{text}</span>
-            <Cursor />
-        </h1>
+        <Image 
+          className='relative rounded-full mx-auto object-cover' src={placeHolderImage} height={200} width={200} alt="Gord" />
+        <div>
+          <h1>
+              <span>{text}</span>
+              <Cursor />
+          </h1>
+        </div>
     </div>
   )
 }
