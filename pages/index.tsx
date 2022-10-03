@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-gradient-to-r from-violet-900 to-black text-white h-screen'>
+    <div className='bg-gradient-to-r from-violet-900 to-black text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
         <title>Gord&apos;s Work</title>
       </Head>
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Hero */}
-      <section id='hero'>
+      <section id='hero' className='snap-center'>
         <Hero />
       </section>
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
+import placeHolderImage from "../assets/placeholder.jpg";
+import Image from 'next/image';
 
 
 type Props = {}
@@ -12,8 +14,9 @@ function Hero({}: Props) {
         delaySpeed: 3000,
     })
   return (
-    <div>
+    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
+        <Image src={placeHolderImage} width={300} height={300} />
         <h1>
             <span>{text}</span>
             <Cursor />
@@ -22,4 +25,4 @@ function Hero({}: Props) {
   )
 }
 
-export default Hero
+export default Hero;
