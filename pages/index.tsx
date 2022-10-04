@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-import styles from '../styles/Home.module.css'
+import Skills from '../components/Skills'
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +31,9 @@ const Home: NextPage = () => {
       </section>
 
       {/* Skills */}
+      <section  id='skills' className='snap-center h-screen'>
+        <Skills />
+      </section>
 
       {/* Projects */}
 
