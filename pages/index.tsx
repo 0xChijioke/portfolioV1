@@ -4,11 +4,12 @@ import About from '../components/About'
 import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-gradient-to-r from-violet-900 to-black text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-gradient-to-r from-violet-900 to-black text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
       <Head>
         <title>Gord&apos;s Work</title>
       </Head>
@@ -31,11 +32,14 @@ const Home: NextPage = () => {
       </section>
 
       {/* Skills */}
-      <section  id='skills' className='snap-center h-screen'>
+      <section id='skills' className='snap-start h-screen'>
         <Skills />
       </section>
 
       {/* Projects */}
+      <section id='skills' className='snap-start h-screen'>
+        <Projects />
+      </section>
 
       {/* Contact */}
 
