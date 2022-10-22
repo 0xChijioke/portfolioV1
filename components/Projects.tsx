@@ -15,7 +15,7 @@ function Projects({}: Props) {
                 <div key={index} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                     <img
                         src='https://via.placeholder.com/300'
-                        alt=''
+                        alt='project'
                     />
                     <div><h4>Case Study 1 of 3:</h4></div>
                 </div>
