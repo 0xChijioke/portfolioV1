@@ -23,11 +23,11 @@ function Header({}: Props) {
         transition={{
             duration: 1.5,
         }}
-        className='flex flex-row items-center'>
+        className='flex flex-row space-x-2 items-center'>
             {/* Social Icons */}
             <SocialIcon url="https://www.twitter.com/chijoke_" fgColor='gray' bgColor='transperent' />
-            <SocialIcon url="https://www.twitter.com/chijoke_" fgColor='gray' bgColor='transperent' />
-            <SocialIcon url="https://www.twitter.com/chijoke_" fgColor='gray' bgColor='transperent' />
+            <SocialIcon url="https://www.github.com/EngrGord" fgColor='gray' bgColor='transperent' />
+            <SocialIcon url="https://www.linkedin.com/in/chijoke-ogbuanya/" fgColor='gray' bgColor='transperent' />
         </motion.div>
 
         <motion.div

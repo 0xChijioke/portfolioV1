@@ -20,6 +20,18 @@ function Skills({}: Props) {
             <Skill />
             <Skill />
             <Skill />
+            <Skill />
+            <Skill />
+            <Skill />
+            <Skill />
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
+            <Skill directionLeft/>
         </div>
         
     </motion.div>
