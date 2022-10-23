@@ -10,17 +10,26 @@ function Projects({}: Props) {
             Projects
         </h3>
 
-        {/* <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
-            {projects.map((project, index) => (
-                <div key={index} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+            {projects.map((project, i) => (
+                <div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                     <img
-                        src='https://via.placeholder.com/300'
+                        src='https://via.placeholder.com/200'
                         alt='project'
                     />
-                    <div><h4>Case Study 1 of 3:</h4></div>
+                    <div>
+                        <h4>
+                            <span className='underline decoration-[#F7ABBA]/58'>Case Study {i + 1} of {projects.length}:
+                            </span>
+                        </h4>
+
+                        <p className='text-lg text-center md:text-left'>
+                        If the player is driving forwards and wants to stop, the brake/reverse key must be pressed. This causes the car brakes to operate. Once the car has come to rest, the reverse gear is automatically selected and the car will reverse.
+                        </p>
+                    </div>
                 </div>
             ))}
-        </div> */}
+        </div>
 
         <div className='w-full absolute top-[180px] bg-[#F7AB0A]/10 left-0 h-[300px] -skew-y-12'></div>
     </div>
