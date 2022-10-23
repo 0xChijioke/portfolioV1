@@ -16,9 +16,9 @@ function Skill({ directionLeft }: Props) {
             transition={{ duration: 2 }}
             whileInView={{ opacity: 1, x: 0 }}
             src="https://camo.githubusercontent.com/9d4dc2e1f097fe4a81c0a78eb937f3a1f567baa05162b21f3e3a377d38a18dc8/68747470733a2f2f696d672e69636f6e73382e636f6d2f756c74726176696f6c65742f34302f3030303030302f72656163742e706e67"
-            className='rounded-full border border-gray-500 object-cover w-10 h-10 lg:w-20 lg:h-20 filter group-hover:grayscale transition durantion-300 ease-in-out'
+            className='rounded-full border border-gray-500 object-cover w-10 h-10 lg:w-16 lg:h-16 filter group-hover:grayscale transition durantion-300 ease-in-out'
         />
-        <div className='absolute opacity-0 group-hover:opacity-80 transition durantion-300 ease-in-oout group-hover:bg-white w-10 h-10 lg:w-20 lg:h-20 rounded-full z-0'>
+        <div className='absolute opacity-0 group-hover:opacity-80 transition durantion-300 ease-in-oout group-hover:bg-white w-10 h-10 lg:w-16 lg:h-16 rounded-full z-0'>
             <div className='flex items-center justify-center h-full'>
                 <p className='text-sm lg:text-xl font-bold text-black opacity-100'>100%</p>
             </div>
