@@ -20,8 +20,8 @@ function ExperienceCard({}: Props) {
             />
 
             <div className='px-0 md:px-10'>
-                <h4 className='text-2xl font-light'>Founder</h4>
-                <p className='font-bold text-xl mt-1'>CHRISTESS</p>
+                <h4 className='text-2xl font-light'>Fullstack</h4>
+                <p className='font-bold text-xl mt-1'>BuidlGuidl</p>
                 <div className='flex space-x-2 my-2'>
                     <img className='h-5 w-5 rounded-full'
                         src='https://via.placeholder.com/300'

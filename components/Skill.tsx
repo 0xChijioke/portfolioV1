@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import ReactLogo from "../assets/react.png";
 
 type Props = {
     directionLeft?: boolean;
