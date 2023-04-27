@@ -13,7 +13,7 @@ function About({}: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
          className='flex flex-col relative h-screen text-center md:text-left md:flex-row max=w=6xl px-10 justify-evenly mx=auto items-center'>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
+        <h3 className='absolute top-24 uppercase tracking-[20px] z-10 text-gray-500 text-2xl'>About</h3>
         <motion.div
             initial={{
                 x: -200,
@@ -24,7 +24,7 @@ function About({}: Props) {
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="mt-20 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-cover md:rounded-lg md:h-95 md:w-64 lg:w-[300px] lg:h-[400px]" >
+            className="mt-20 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:h-95 md:w-64 lg:w-[300px] lg:h-[400px]" >
           <Image
             src={Me}
             width={300}
@@ -34,12 +34,13 @@ function About({}: Props) {
           />
       </motion.div>
 
-            <div className='space-y-10 mt-5 px-0 md:px-10'>
+            <div className='space-y-6 mt-5 px-0 md:px-10'>
                 <h4 className='text-2xl font-semibold'>Here is a{" "}
                 <span className='underline decoration-[#F7AB0A]/50'>little</span> background
                 </h4>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Hi, I'm CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
+                   With 5 years of experience in Javascript development, I specialize in React, Next, Typescript and Tailwind. When I'm not building, I love spending time in nature, working out, or just relaxing. Let's connect on WhatsApp or Twitter to discuss your DApp project and how I can help bring it to life!
                 </p>
             </div>
     </motion.div>
