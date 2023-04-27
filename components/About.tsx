@@ -27,12 +27,14 @@ function About({}: Props) {
             className="mt-20 md:mb-0 flex-shrink-0 w-36 h-36 rounded-full object-cover md:rounded-lg md:h-95 md:w-64 lg:w-[300px] lg:h-[400px]" >
           <Image
             src={Me}
-            width={36}
-            height={36}
+            width={300}
+            height={Math.round((300 * 1280) / 847)}
+            className="rounded-xl my-4"
+            alt="Me"
           />
-        </motion.div>
+      </motion.div>
 
-            <div className='space-y-10 px-0 md:px-10'>
+            <div className='space-y-10 mt-5 px-0 md:px-10'>
                 <h4 className='text-2xl font-semibold'>Here is a{" "}
                 <span className='underline decoration-[#F7AB0A]/50'>little</span> background
                 </h4>
