@@ -29,7 +29,7 @@ function About({}: Props) {
             src={Me}
             width={300}
             height={Math.round((300 * 1280) / 847)}
-            className="rounded-xl my-4"
+            className="rounded md:rounded-lg my-4"
             alt="Me"
           />
       </motion.div>
@@ -39,8 +39,8 @@ function About({}: Props) {
                 <span className='underline decoration-[#F7AB0A]/50'>little</span> background
                 </h4>
                 <p>
-                  Hi, I'm CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
-                   With 5 years of experience in Javascript development, I specialize in React, Next, Typescript and Tailwind. When I'm not building, I love spending time in nature, working out, or just relaxing. Let's connect on WhatsApp or Twitter to discuss your DApp project and how I can help bring it to life!
+                  Hi, I&apos;m CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
+                   With 5 years of experience in Javascript development, I specialize in React, Next, Typescript, Tailwind and EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on WhatsApp or Twitter to discuss your project and how I can help bring it to life!
                 </p>
             </div>
     </motion.div>
