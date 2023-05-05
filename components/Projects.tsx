@@ -21,14 +21,15 @@ function Projects({ }: Props) {
                         height={100}
                         alt='project'
                     />
-                    <div>
-                        <h4>
+                    <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+                        <h4 className="font-semibold text-4xl text-center">
                             <span className='underline decoration-[#F7ABBA]/58'>Case Study {i + 1} of {projects.length}:
-                            </span>
+                            </span>{" "}
+                            Cross
                         </h4>
 
                         <p className='text-lg text-center md:text-left'>
-                        If the player is driving forwards and wants to stop, the brake/reverse key must be pressed. This causes the car brakes to operate. Once the car has come to rest, the reverse gear is automatically selected and the car will reverse.
+                        Cross is a decentralized application (dapp) that enables users to bridge their assets between Ethereum and Optimism and collect rare Cross NFTs(Non-Fungible Tokens) on the Ethereum blockchain. The app is built with Next.js and typescript on the frontend, and Solidity smart contracts on the backend.
                         </p>
                     </div>
                 </div>
