@@ -16,7 +16,7 @@ function Skill({ directionLeft }: Props) {
             }}
             transition={{ duration: 2 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={NextLogo}
+            src={"https://img.icons8.com/color/48/000000/nodejs.png"}
             className='rounded-full border border-gray-500 object-cover w-10 h-10 lg:w-16 lg:h-16 filter group-hover:grayscale transition durantion-300 ease-in-out'
         />
         <div className='absolute opacity-0 group-hover:opacity-80 transition durantion-300 ease-in-oout group-hover:bg-white w-10 h-10 lg:w-16 lg:h-16 rounded-full z-0'>
