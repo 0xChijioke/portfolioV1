@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from "framer-motion";
-import NextLogo from "../assets/Next.js.png";
+// import NextLogo from "../assets/Next.js.png";
 
 type Props = {
     directionLeft?: boolean;

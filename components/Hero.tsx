@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
 import placeHolderImage from "../assets/placeholder.jpg";
@@ -39,6 +38,9 @@ function Hero({}: Props) {
             </Link>
             <Link href={"#projects"}>
               <button className='heroButton'>Projects</button>
+            </Link>
+            <Link href={"#contact"}>
+              <button className='heroButton'>Contact</button>
             </Link>
           </div>
         </div>
