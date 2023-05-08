@@ -1,5 +1,5 @@
+"use client";
 import { motion } from "framer-motion";
-import placeHolderImage from "../assets/placeholder.jpg";
 import Me from "../assets/me.jpg";
 import Image from "next/image";
 

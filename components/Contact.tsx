@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 type Props = {}
@@ -51,9 +52,9 @@ const Contact = (props: Props) => {
                         <input className="contactInput h-10" type="text" />
                     </div>
 
-                    <input className="contactInput h-10" type="test" />
+                    <input className="contactInput h-10" type="text" />
 
-                    <textarea className="contactInput" />
+                    <textarea className="contactInput" cols={5} />
                     <button className="uppercase bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg">Submit</button>
                 </form>
               </div>

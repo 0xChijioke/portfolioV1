@@ -1,3 +1,4 @@
+"use client";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
@@ -5,10 +6,10 @@ type Props = {}
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0 p-2 flex items-start justify-between max-w-5xl mx-auto z-20 xl:items-center">
+    <header className="sticky overflow-hidden top-0 p-2 flex items-start justify-between max-w-5xl mx-auto z-20 xl:items-center">
         <motion.div
         initial={{
-            x: -500,
+            x: -900,
             opacity: 0,
             scale: 0.5
         }}
@@ -31,7 +32,7 @@ function Header({}: Props) {
 
         <motion.div
         initial={{
-            x: 500,
+            x: 900,
             opacity: 0,
             scale: 0.5,
         }}

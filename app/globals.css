@@ -13,3 +13,6 @@
 
 }
 
+body {
+    scrollbar-width: none;
+  }
