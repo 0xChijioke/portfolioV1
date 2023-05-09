@@ -19,7 +19,7 @@ function About({}: Props) {
                 opacity: 0,
             }}
             transition={{
-                duration: 2,
+                duration: 1,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -30,7 +30,7 @@ function About({}: Props) {
             alt="Me"
             placeholder="blur"
           />
-      </motion.div>
+        </motion.div>
 
             <div className="space-y-6 mt-5 px-0 md:px-10">
                 <h4 className="text-2xl font-semibold">Here is a{" "}
