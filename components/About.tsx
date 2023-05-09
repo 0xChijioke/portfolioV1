@@ -23,13 +23,12 @@ function About({}: Props) {
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="mt-20 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:h-95 md:w-64 lg:w-[300px] lg:h-[400px]" >
+            className="" >
           <Image
             src={Me}
-            width={300}
-            height={Math.round((300 * 1280) / 847)}
-            className="rounded md:rounded-lg my-4"
+            className="rounded-full md:rounded-lg flex-shrink-0 w-32 h-32 object-cover md:h-95 md:w-64 lg:w-[800px] my-0 lg:my-auto lg:h-[430px]"
             alt="Me"
+            placeholder="blur"
           />
       </motion.div>
 

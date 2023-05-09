@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
           
           <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">Contact</h3>
         
-          <div className="flex flex-col pt-30 space-y-7">
+          <div className="flex flex-col mt-30 space-y-7">
               <h4 className="md:text-4xl text-xl font-semibold text-center">
                   I have got just what you need.{" "}
                   <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>

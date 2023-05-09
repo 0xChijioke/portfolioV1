@@ -6,20 +6,37 @@ import BackgroundCircles from "./BackgroundCircles";
 import placeHolderImage from "../assets/placeholder.jpg";
 
 
+
+
 type Props = {}
 
 function Hero({ }: Props) {
   
-    const [text, count] = useTypewriter({
-        words: ["Hey! My name is Chijoke.",
-          "I'm passionate about Public Goods.",
-          "I love creative coding </>",
-          "I work with passionate people."
-        ],
-        loop: true,
-        delaySpeed: 3000,
-    })
+  const [text, count] = useTypewriter({
+    words: ["Hey! My name is Chijoke.",
+    "Public Goods excit me.",
+    "I love creative coding </>",
+    "I work with passionate people."
+  ],
+  loop: true,
+  delaySpeed: 3000,
+})
+
   
+// A utility function to help scroll to a section
+// through the buttons because just using the ID's
+// are not working in prod, potentially because of 
+// how next bundle the javascript.
+function scrollToSection(id: string) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
+}
   return (
     <div className="flex flex-col w-full space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
         <BackgroundCircles />
@@ -40,20 +57,20 @@ function Hero({ }: Props) {
                 <Cursor cursorColor="#FFFFFF" />
             </h1>            
           </div>
-          <div className="pt-5 space-x-2 space-y-2">
-            <Link href={"#about"}>
+          <div className="pt-5 space-x-2">
+            <Link href="#" onClick={() => scrollToSection("about")}>
               <button className="heroButton">About</button>
             </Link>
-            <Link href={"#experience"}>
+            <Link href="#" onClick={() => scrollToSection("experience")}>
               <button className="heroButton">Experience</button>
             </Link>
-            <Link href={"#skills"}>
+            <Link href="#" onClick={() => scrollToSection("skills")}>
               <button className="heroButton">Skills</button>
             </Link>
-            <Link href={"#projects"}>
+            <Link href="#" onClick={() => scrollToSection("projects")}>
               <button className="heroButton">Projects</button>
             </Link>
-            <Link href={"#contact"}>
+            <Link href="#" onClick={() => scrollToSection("contact")}>
               <button className="heroButton">Contact</button>
             </Link>
           </div>
