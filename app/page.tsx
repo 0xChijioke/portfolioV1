@@ -13,22 +13,22 @@ const Home: NextPage = () => {
     <div>
 
       {/* Hero */}
-      <section id="hero" className="snap-start h-screen">
+      <section id="hero" className="snap-end h-screen">
         <Hero />
       </section>
 
       {/* About */}
-      <section id="about" className="snap-start h-screen">
+      <section id="about" className="snap-end h-screen">
         <About />
       </section>
 
       {/* Experience */}
-      <section id="experience" className="snap-center h-screen">
+      <section id="experience" className="snap-end h-screen">
         <Experience />
       </section>
 
       {/* Skills */}
-      <section id="skills" className="snap-start h-screen">
+      <section id="skills" className="snap-end h-screen">
         <Skills />
       </section>
 

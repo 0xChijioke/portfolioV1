@@ -36,7 +36,7 @@ function About({}: Props) {
                 <h4 className="text-2xl font-semibold">Here is a{" "}
                 <span className="underline decoration-[#F7AB0A]/50">little</span> background
                 </h4>
-                <p>
+                <p className="tracking-wider">
                   Hi, I&apos;m CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
                    With 5 years of experience in Javascript development, I specialize in React, Next, Typescript, Tailwind and EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on WhatsApp or Twitter to discuss your project and how I can help bring it to life!
                 </p>
@@ -45,4 +45,4 @@ function About({}: Props) {
   )
 }
 
-export default About
+export default About;

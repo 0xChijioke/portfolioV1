@@ -14,7 +14,7 @@ function Hero({ }: Props) {
   
   const [text, count] = useTypewriter({
     words: ["Hey! My name is Chijoke.",
-    "Public Goods excit me.",
+    "Public goods excit me.",
     "I love creative coding </>",
     "I work with passionate people."
   ],
@@ -27,15 +27,18 @@ function Hero({ }: Props) {
 // through the buttons because just using the ID's
 // are not working in prod, potentially because of 
 // how next bundle the javascript.
-function scrollToSection(id: string) {
+  function scrollToSection(id: string) {
+  console.log(id)
   const element = document.getElementById(id);
+  console.log(element);
   if (element) {
     element.scrollIntoView({
       behavior: "smooth",
-      block: "start",
-      inline: "nearest"
+      block: "end",
+      inline: "end"
     });
-  }
+    }
+    console.log(element)
 }
   return (
     <div className="flex flex-col w-full space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
