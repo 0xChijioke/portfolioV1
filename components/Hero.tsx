@@ -28,17 +28,14 @@ function Hero({ }: Props) {
 // are not working in prod, potentially because of 
 // how next bundle the javascript.
   function scrollToSection(id: string) {
-  console.log(id)
-  const element = document.getElementById(id);
-  console.log(element);
-  if (element) {
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "end"
-    });
-    }
-    console.log(element)
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "end"
+      });
+      }
 }
   return (
     <div className="flex flex-col w-full space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
