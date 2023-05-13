@@ -23,7 +23,7 @@ function About({}: Props) {
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="" >
+            className="mt-10 md:mt-0">
           <Image
             src={Me}
             className="rounded-full md:rounded-lg flex-shrink-0 w-32 h-32 object-cover md:h-95 md:w-64 lg:w-[800px] my-0 lg:my-auto lg:h-[430px]"
