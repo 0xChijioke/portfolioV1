@@ -12,7 +12,7 @@ function About({}: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
          className="flex flex-col relative h-screen text-center md:text-left md:flex-row max=w=6xl px-10 justify-evenly mx=auto items-center">
-        <h3 className="absolute top-24 uppercase tracking-[20px] z-10 text-gray-500 text-2xl">About</h3>
+        <h3 className="absolute top-16 md:top-24 uppercase tracking-[20px] z-10 text-gray-500 text-2xl">About</h3>
         <motion.div
             initial={{
                 x: -200,
@@ -23,7 +23,7 @@ function About({}: Props) {
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="mt-40 md:mt-0">
+            className="mt-30 md:mt-0">
           <Image
             src={Me}
             className="rounded-full md:rounded-lg flex-shrink-0 w-32 h-32 object-cover md:h-95 md:w-64 lg:w-[800px] my-0 lg:my-auto lg:h-[430px]"
