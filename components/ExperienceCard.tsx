@@ -58,7 +58,7 @@ function ExperienceCard({}: Props) {
           />
         </div>
         <p className="uppercase py-5 text-gray-300 text-md">
-          Started work: April '22 - Ended...
+          Started work: April &apos;22 - Ended...
         </p>
 
         <ul className="list-disc space-y-4 ml-5 text-sm">
