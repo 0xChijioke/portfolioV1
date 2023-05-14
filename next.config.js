@@ -8,6 +8,12 @@ const nextConfig = {
         port: '',
         pathname: 'dk3o1hrxt/image/upload/v1683378215/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+        port: '',
+        pathname: '/300/**',
+      },
     ],
   },
 }

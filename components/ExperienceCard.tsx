@@ -28,23 +28,31 @@ function ExperienceCard({}: Props) {
         <h4 className="text-2xl font-light">Fullstack Builder</h4>
         <p className="mt-1 w-[160px] "><Image src={BGLogo} alt={"BuidlGUidl"} /></p>
         <div className="flex space-x-2 my-2">
-          <img
+          <Image
             className="h-5 w-5 rounded-full"
+            width={5}
+            height={5}
             src="https://via.placeholder.com/300"
             alt="image"
           />
-          <img
+          <Image
             className="h-5 w-5 rounded-full"
+            width={5}
+            height={5}
             src="https://via.placeholder.com/300"
             alt="image"
           />
-          <img
+          <Image
             className="h-5 w-5 rounded-full"
+            width={5}
+            height={5}
             src="https://via.placeholder.com/300"
             alt="image"
           />
-          <img
+          <Image
             className="h-5 w-5 rounded-full"
+            width={5}
+            height={5}
             src="https://via.placeholder.com/300"
             alt="image"
           />
