@@ -45,8 +45,8 @@ const Contact = (props: Props) => {
               </div>
               
         
-              <div>
-                <form className="flex flex-col space-y-2 px-5 w-fit mx-auto">
+              <div className="w-full my-6 p-5 items-center">
+                <form className="space-y-2 px-5 w-auto">
                     <div className="flex space-x-2">
                         <input className="contactInput h-10" type="text" />
                         <input className="contactInput h-10" type="text" />
