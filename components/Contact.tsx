@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
           
           <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">Contact</h3>
         
-          <div className="flex flex-col space-y-7">
+          <div className="flex mt-10 flex-col space-y-7">
               <h4 className="md:text-4xl text-xl font-semibold text-center">
                   I have got just what you need.{" "}
                   <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
@@ -45,22 +45,40 @@ const Contact = (props: Props) => {
               </div>
               
         
-              <div className="flex flex-col w-[90%] md:w-full mx-5 my-6 p-5 items-center">
-                <form className="flex flex-col space-y-2 px-5 w-auto">
-                    <div className="flex space-x-2">
-                        <input className="contactInput h-10" type="text" />
-                        <input className="contactInput h-10" type="text" />
-                    </div>
-
-                    <input className="contactInput h-10" type="text" />
-
-                    <textarea className="contactInput" cols={5} />
-                    <button className="uppercase bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg">Submit</button>
-                </form>
-              </div>
+        <div className="flex flex-col w-[90%] md:w-full mx-5 my-10 p-5 items-center">
+          <form className="flex flex-col space-y-3 px-5 w-auto">
+            <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row">
+              <input
+                className="contactInput h-10"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                className="contactInput h-10"
+                type="text"
+                placeholder="Last Name"
+              />
             </div>
+
+            <input
+              className="contactInput h-10"
+              type="text"
+              placeholder="Email"
+            />
+
+            <textarea
+              className="contactInput"
+              cols={5}
+              placeholder="Message"
+            />
+            <button className="uppercase bg-[#F7AB0A] py-3 px-10 rounded-md text-black font-bold text-lg">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </motion.div>
   )
 }
 
-export default Contact
+export default Contact;
