@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 type Props = {}
 
 function Header({}: Props) {
+    const email = "chijokeogbuanya@gmail.com";
   return (
     <header className="sticky overflow-hidden top-0 p-2 flex items-start justify-between max-w-5xl mx-auto z-20 xl:items-center">
         <motion.div
@@ -45,13 +46,16 @@ function Header({}: Props) {
 
         transition={{ duration: 1.5 }}
          className="flex flex-row items-center text-gray-300 cursor-pointer">
-            <SocialIcon
-                className="cursor-pointer"
-                network="email"
-                fgColor="gray"
-                bgColor="transparent"
-            />
-            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in touch</p>
+            <a href={`mailto:${email}`}>
+                <SocialIcon
+                    network="email"
+                    fgColor="gray"
+                    bgColor="transparent"
+                />
+                <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+                    Get in touch
+                </p>
+            </a>
         </motion.div>
     </header>
   )
