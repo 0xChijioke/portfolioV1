@@ -27,16 +27,25 @@ function Hero({ }: Props) {
 // through the buttons because just using the ID's
 // are not working in prod, potentially because of 
 // how next bundle the javascript.
-  function scrollToSection(id: string) {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "end",
-        inline: "end"
-      });
-      }
+function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string) {
+  event.preventDefault();
+  const element = event.currentTarget;
+  const section = document.getElementById(id);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+
+  // Add a small delay to re-enable the button after scrolling
+  // element.disabled = true;
+  // setTimeout(() => {
+  //   element.disabled = false;
+  // }, 500);
 }
+
   return (
     <div className="flex flex-col w-full space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
         <BackgroundCircles />
@@ -58,19 +67,19 @@ function Hero({ }: Props) {
             </h1>            
           </div>
           <div className="pt-5 space-x-2">
-            <Link href="#" onClick={() => scrollToSection("about")}>
+            <Link href="#" onClick={(e) => scrollToSection(e, "about")}>
               <button className="heroButton">About</button>
             </Link>
-            <Link href="#" onClick={() => scrollToSection("experience")}>
+            <Link href="#" onClick={(e) => scrollToSection(e, "experience")}>
               <button className="heroButton">Experience</button>
             </Link>
-            <Link href="#" onClick={() => scrollToSection("skills")}>
+            <Link href="#" onClick={(e) => scrollToSection(e, "skills")}>
               <button className="heroButton">Skills</button>
             </Link>
-            <Link href="#" onClick={() => scrollToSection("projects")}>
+            <Link href="#" onClick={(e) => scrollToSection(e, "projects")}>
               <button className="heroButton">Projects</button>
             </Link>
-            <Link href="#" onClick={() => scrollToSection("contact")}>
+            <Link href="#" onClick={(e) => scrollToSection(e, "contact")}>
               <button className="heroButton">Contact</button>
             </Link>
           </div>

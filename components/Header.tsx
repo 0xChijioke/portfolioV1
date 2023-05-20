@@ -61,4 +61,4 @@ function Header({}: Props) {
   )
 }
 
-export default Header
+export default Header;
