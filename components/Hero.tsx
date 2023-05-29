@@ -15,9 +15,9 @@ function Hero({ }: Props) {
   const [text, count] = useTypewriter({
     words: [
       "Hey! My name is Chijoke.",
-    "Building the future with code and imagination.",
-    "Collaborative problem solver, fueled by creativity.",
-    "Driven by innovation. Creating with passion.",
+    // "Building the future with code and imagination.",
+    "Collaborative problem solver.",
+    // "Driven by innovation. Creating with passion.",
     "Let's create together!",
   ],
   loop: true,
