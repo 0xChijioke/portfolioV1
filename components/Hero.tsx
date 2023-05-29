@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import placeHolderImage from "../assets/placeholder.jpg";
+import CJ from "../assets/CJ.jpg";
 
 
 
@@ -51,7 +51,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
         <BackgroundCircles />
         <Image
           className="relative w-[200px] h-[200px] rounded-full mx-auto object-cover" 
-          src={placeHolderImage}
+          src={CJ}
           alt="CJ"
           placeholder="blur"
           priority 
