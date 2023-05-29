@@ -13,10 +13,12 @@ type Props = {}
 function Hero({ }: Props) {
   
   const [text, count] = useTypewriter({
-    words: ["Hey! My name is Chijoke.",
-    "Public goods excit me.",
-    "I love creative coding </>",
-    "I work with passionate people."
+    words: [
+      "Hey! My name is Chijoke.",
+    "Building the future with code and imagination.",
+    "Collaborative problem solver, fueled by creativity.",
+    "Driven by innovation. Creating with passion.",
+    "Let's create together!",
   ],
   loop: true,
   delaySpeed: 3000,
@@ -56,7 +58,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
           placeholder="blur"
           priority 
         />
-        <div className="z-20">
+        <div className="z-20 space-y-9">
           <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
               Software Engineer
           </h2>
