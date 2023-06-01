@@ -2,7 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 TODO: Debug hydration issue.
 - Working on domain name for the portfolio site. chijoke.xyz?
-- Portfolio image pending.
 - Add a testmonial page and reachout to previous clients.
 Project status still pending, looking at end of month shipping time.
 
