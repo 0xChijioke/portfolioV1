@@ -1,9 +1,20 @@
 "use client";
+import { sql } from '@vercel/postgres';
 import { motion } from "framer-motion";
 
 type Props = {}
 
-function Projects({ }: Props) {
+async function Projects({ }: Props) {
+
+    const response = await fetch('/api/pets');
+    const data = await response.json();
+    const pets = data.pets;
+
+
+    console.log(pets)
+
+
+
     const projects = [1,2,3,4,5];
   return (
       <motion.div
