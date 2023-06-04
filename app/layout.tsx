@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`font-Gotham bg-gradient-to-r from-violet-900 to-black text-white h-screen snap-y overflow-x-hidden max-w-screen snap-mandatory overflow-y-scroll z-0`}>
+        <div className={`gotham-font bg-gradient-to-r from-violet-900 to-black text-white h-screen snap-y overflow-x-hidden max-w-screen snap-mandatory overflow-y-scroll z-0`}>
           <Header />
           {children}
         </div>

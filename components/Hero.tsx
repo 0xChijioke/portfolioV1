@@ -16,9 +16,9 @@ function Hero({ }: Props) {
     words: [
       "Hey! My name is Chijoke.",
     // "Building the future with code and imagination.",
-    "Collaborative problem solver.",
+    "I'm passionate about shipping.",
     // "Driven by innovation. Creating with passion.",
-    "Let's create together!",
+    "Let's ship together!",
   ],
   loop: true,
   delaySpeed: 3000,
