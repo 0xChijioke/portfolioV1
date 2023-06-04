@@ -11,26 +11,26 @@ type Project = {
 
 // type Props = {};
 function Projects() {
-    const [projects, setProjects] = useState<Project[]>([]);
+    // const [projects, setProjects] = useState<Project[]>([]);
     
       
-    useEffect(() => {
-        const fetchProjects = async () => {
-          try {
-            const client = await db.connect();
-            const result = await client.query('SELECT * FROM Projects');
-            setProjects(result.rows);
-            client.release();
-          } catch (error) {
-            console.error('Error retrieving projects:', error);
-          }
-        };
+    // useEffect(() => {
+    //     const fetchProjects = async () => {
+    //       try {
+    //         const client = await db.connect();
+    //         const result = await client.query('SELECT * FROM Projects');
+    //         setProjects(result.rows);
+    //         client.release();
+    //       } catch (error) {
+    //         console.error('Error retrieving projects:', error);
+    //       }
+    //     };
       
-        fetchProjects();
-    }, []);
+    //     fetchProjects();
+    // }, []);
     
-    console.log(projects)
-    // const projects = [1,2,3,4,5];
+    // console.log(projects)
+    const projects = [1,2,3,4,5];
     return (
         <motion.div
             initial={{ opacity: 0}}
