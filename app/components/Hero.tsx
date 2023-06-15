@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import CJ from "../assets/CJ.jpg";
+import CJ from "../../assets/CJ.jpg";
 
 
 
@@ -14,11 +14,11 @@ function Hero({ }: Props) {
   
   const [text, count] = useTypewriter({
     words: [
-      "Hey! My name is Chijoke.",
+      "Hey! I'm Chijoke.",
     // "Building the future with code and imagination.",
-    "I love solving problems.",
+    "Superior Quality Guaranteed.",
     // "Driven by innovation. Creating with passion.",
-    "Let's ship together!",
+    "Let's create together!",
   ],
   loop: true,
   delaySpeed: 3000,

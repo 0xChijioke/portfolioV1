@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Me from "../assets/me.jpg";
-import Image from "next/image";
+import EarthCanvas from "./canvas/Earth";
 
 type Props = {}
 
@@ -23,22 +22,17 @@ function About({}: Props) {
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="mt-28 md:mt-0">
-          <Image
-            src={Me}
-            className="rounded-full md:rounded-lg flex-shrink-0 w-32 h-32 object-cover md:h-95 md:w-64 lg:w-[800px] my-0 lg:my-auto lg:h-[430px]"
-            alt="Me"
-            placeholder="blur"
-          />
+            className="mt-28 md:mt-0 absolute z-0 w-full h-full">
+          <EarthCanvas />
         </motion.div>
 
-            <div className="space-y-6 mt-5 px-0 md:px-10">
+            <div className="space-y-6 mt-5 z-10 px-0 md:px-10">
                 <h4 className="text-2xl font-semibold">Here is a{" "}
                 <span className="underline decoration-[#F7AB0A]/50">little</span> background
                 </h4>
                 <p className="tracking-wider">
                   I&apos;m CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
-                   With 5 years of experience in Javascript development, I specialize in React, Next, Typescript, Tailwind and EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on WhatsApp or Twitter to discuss your project and how I can help bring it to life!
+                   With over 5 years of experience in Fullstack Javascript development, I specialize in React, Next, Typescript, Tailwind and EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on WhatsApp or Twitter to discuss your project and how I can help bring it to life!
                 </p>
             </div>
     </motion.div>

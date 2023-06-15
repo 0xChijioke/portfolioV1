@@ -1,6 +1,8 @@
-import { db, sql } from "@vercel/postgres";
+// app/components/Projects.tsx
+"use client"
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+
 
 type Project = {
   id: number;
@@ -9,28 +11,29 @@ type Project = {
   description: string;
 };
 
-// type Props = {};
 function Projects() {
-    // const [projects, setProjects] = useState<Project[]>([]);
+    const [projects, setProjects] = useState<Project[]>([]);
     
-      
-    // useEffect(() => {
-    //     const fetchProjects = async () => {
-    //       try {
-    //         const client = await db.connect();
-    //         const result = await client.query('SELECT * FROM Projects');
-    //         setProjects(result.rows);
-    //         client.release();
-    //       } catch (error) {
-    //         console.error('Error retrieving projects:', error);
-    //       }
-    //     };
-      
-    //     fetchProjects();
-    // }, []);
+    useEffect(() => {
+        const fetchProjects = async () => {
+          try {
+            const response = await fetch("/api", {
+              method: "GET",
+            });
     
-    // console.log(projects)
-    const projects = [1,2,3,4,5];
+            if (!response.ok) {
+              throw new Error("Failed to fetch projects");
+            }
+            const data = await response.json(); 
+            setProjects(data);
+          } catch (error) {
+            console.error("Error retrieving projects:", error);
+          }
+        };
+    
+        fetchProjects();
+      }, []);
+    
     return (
         <motion.div
             initial={{ opacity: 0}}
@@ -42,15 +45,13 @@ function Projects() {
             </h3>
 
             <div className="relative w-full flex overflow-x-scroll outline-none overflow-y-hidden snap-x snap-mandatory z-20">
-                {projects.map((project, i) => (
-                    <div key={i} className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-7 md:p-44 h-screen">
-                        
+            {projects && projects.map((project, i) => (
+                    <div key={project.id} className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-7 md:p-44 h-screen">
                         <motion.img
                             initial={{ y: -200 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.2 }}
-                            // viewport={{ once: true }}
-                            src="https://res.cloudinary.com/dk3o1hrxt/image/upload/v1683378215/cross_qjs0tw.png"
+                            src={project.image}
                             width={200}
                             height={200}
                             alt="project"
@@ -58,13 +59,13 @@ function Projects() {
                         />
                         <div className="md:space-y-10 space-y-3 px-0 md:px-10 max-w-6xl">
                             <h4 className="font-semibold text-xl md:text-4xl text-center">
-                                <span className="underline decoration-[#F7AB0A]/50">Case Study {i + 1} of {projects.length}:
+                                <span className="underline decoration-[#F7AB0A]/50">
+                                    Case Study {i + 1} of {projects.length}:
                                 </span>{" "}
-                                Cross
+                                {project.title}
                             </h4>
-
                             <p className="text-lg text-center md:text-left">
-                                Cross is a decentralized application (dapp) that enables users to bridge their assets between Ethereum and Optimism and collect rare Cross NFTs(Non-Fungible Tokens) on the Ethereum blockchain. The app is built with Next.js and typescript on the frontend, and Solidity smart contracts on the backend.
+                                {project.description}
                             </p>
                         </div>
                     </div>
