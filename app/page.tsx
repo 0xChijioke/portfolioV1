@@ -1,3 +1,4 @@
+"use client"
 // app/page.tsx
 import type { NextPage } from "next";
 import About from "./components/About";
@@ -6,6 +7,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import StarsCanvas from "./components/canvas/Stars";
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +15,9 @@ const Home: NextPage = () => {
     <div>
 
       {/* Hero */}
-      <section id="hero" className="snap-end h-screen">
+      <section id="hero" className="snap-end relative h-screen">
         <Hero />
+        <StarsCanvas />
       </section>
 
       {/* About */}
@@ -38,8 +41,9 @@ const Home: NextPage = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="snap-start h-screen">
+      <section id="contact" className="snap-start relative h-screen">
         <Contact />
+        <StarsCanvas />
       </section>
 
     </div>

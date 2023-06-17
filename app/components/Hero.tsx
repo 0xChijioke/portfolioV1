@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import CJ from "../../assets/CJ.jpg";
+import { motion } from "framer-motion";
 
 
 
@@ -15,14 +16,13 @@ function Hero({ }: Props) {
   const [text, count] = useTypewriter({
     words: [
       "Hey! I'm Chijoke.",
-    // "Building the future with code and imagination.",
-    "Superior Quality Guaranteed.",
-    // "Driven by innovation. Creating with passion.",
-    "Let's create together!",
-  ],
-  loop: true,
-  delaySpeed: 3000,
-})
+      "Fast prototyping.",
+      "Superior Quality Guaranteed.",
+      "Let's create together!",
+    ],
+    loop: true,
+    delaySpeed: 3000,
+  })
 
   
 // A utility function to help scroll to a section
@@ -49,7 +49,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
 }
 
   return (
-    <div className="flex flex-col w-full space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
+    <div className="flex flex-col w-full relative space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
         <BackgroundCircles />
         <Image
           className="relative w-[200px] h-[200px] rounded-full mx-auto object-cover" 
@@ -86,6 +86,23 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
             </Link>
           </div>
         </div>
+        {/* <div className='absolute xs:bottom-10 -bottom-10 w-full flex justify-center items-center'>
+        <a href='#about'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div> */}
     </div>
   )
 }
