@@ -51,7 +51,7 @@ const Contact = (props: Props) => {
               }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="absolute lg:relative z-0 lg:flex justify-center lg:w-[45%]">
+              className="absolute lg:relative hidden z-0 lg:flex justify-center lg:w-[45%]">
             <EarthCanvas />
           </motion.div>
 
