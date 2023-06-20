@@ -52,7 +52,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
     <div className="flex flex-col w-full relative space-y-8 items-center justify-center text-center snap-y snap-start overflow-hidden">
         <BackgroundCircles />
         <Image
-          className="relative w-[200px] h-[200px] rounded-full mx-auto object-cover" 
+          className="relative w-[200px] h-[200px] z-20 rounded-full mx-auto object-cover" 
           src={CJ}
           alt="CJ"
           placeholder="blur"
