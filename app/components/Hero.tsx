@@ -15,10 +15,10 @@ function Hero({ }: Props) {
   
   const [text, count] = useTypewriter({
     words: [
-      "Hey! I'm Chijoke.",
-      "Fast prototyping.",
+      "Hey! I build web3 products.",
+      "Very fast prototyping.",
       "Superior Quality Guaranteed.",
-      "Let's create together!",
+      "Let's ship together!",
     ],
     loop: true,
     delaySpeed: 3000,
@@ -60,11 +60,11 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
         />
         <div className="z-20 space-y-9">
           <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-              Software Engineer
+              Chijoke Ogbuanya
           </h2>
           <div className="flex-grow w-full justify-center items-center">
-            <h1 className="text-xl lg:text-4xl font-semibold px-10">
-                <span className="mr-3">{text}</span>
+            <h1 className="text-xl lg:text-4xl font-semibold px-5">
+                <span className="mr-1">{text}</span>
                 <Cursor cursorColor="#FFFFFF" />
             </h1>            
           </div>

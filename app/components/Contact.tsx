@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
             </div> */}
               
 
-        <div className="w-full flex flex-row justify-center">
+        <div className="w-full flex flex-row-reverse justify-center">
 
           <motion.div
               initial={{
