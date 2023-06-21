@@ -11,7 +11,7 @@ import StarsCanvas from "./components/canvas/Stars";
 
 const Home: NextPage = () => {
   return (
-    // My laptop screen is w-8xl
+    // laptop screen is w-8xl
     <div>
 
       {/* Hero */}
