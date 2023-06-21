@@ -58,7 +58,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
           placeholder="blur"
           priority 
         />
-        <div className="z-20 space-y-9">
+        <div className="z-20 space-y-9 whitespace-normal">
           <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
               Chijoke Ogbuanya
           </h2>

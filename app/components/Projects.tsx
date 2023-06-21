@@ -44,7 +44,7 @@ function Projects() {
                 Projects
             </h3>
 
-            <div className="relative w-full flex overflow-x-scroll outline-none overflow-y-hidden snap-x scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A] snap-mandatory z-20">
+            <div className="relative w-full flex overflow-x-scroll outline-none overflow-y-hidden snap-x scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-500 snap-mandatory z-20">
             {projects && projects.map((project, i) => (
                     <div key={project.id} className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-7 md:p-44 h-screen">
                         <motion.img

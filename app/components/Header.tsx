@@ -7,7 +7,7 @@ type Props = {}
 function Header({}: Props) {
     const email = "chijokeogbuanya@gmail.com";
   return (
-    <header className="sticky overflow-hidden top-0 p-2 flex items-start justify-between max-w-5xl mx-auto z-20 xl:items-center">
+    <header className="absolute w-full overflow-hidden top-0 p-2 lg:px-6 flex items-center justify-between mx-auto z-20 xl:items-center">
         <motion.div
         initial={{
             x: -900,
@@ -45,7 +45,7 @@ function Header({}: Props) {
             }}
 
             transition={{ duration: 1.5 }}
-            className="flex flex-row justify-center items-center text-gray-300 cursor-pointer">
+            className="flex flex-row justify-center items-center lg:pr-6 text-gray-300 cursor-pointer">
             <a href={`mailto:${email}`} className="flex p-3 lg:p-0 items-center">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
