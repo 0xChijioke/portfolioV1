@@ -4,25 +4,21 @@ import { motion } from "framer-motion";
 
 function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(true);
-    const heroRef = useRef(null);
 
     useEffect(() => {
-        const handleScroll = () => {
-          const heroSection = document.getElementById("hero");
-          if (heroSection) {
-              const rect = heroSection.getBoundingClientRect();
-              console.log(rect.top)
-            setIsVisible(rect.top <= 0);
-          }
-        };
-    
-        window.addEventListener("scroll", handleScroll);
-    
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, []);
-    
+      const handleScroll = () => {
+        const heroSection = document.getElementById("hero");
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        heroSection?.offsetHeight && setIsVisible(scrollPosition > heroSection.offsetHeight);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
 
   const scrollToTop = () => {
     const section = document.getElementById("hero");
@@ -44,7 +40,7 @@ function ScrollToTop() {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-16 h-30">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
         </svg>
     </motion.button>

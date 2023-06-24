@@ -7,15 +7,15 @@ const skillData = [
     },
     {
       id: 2,
-      name: "Ethereum",
+      name: "Solidity",
       imageSrc: "/tech/ethereum.svg",
-      proficiency: 92,
+      proficiency: 90,
     },
     {
       id: 3,
       name: "React",
       imageSrc: "/tech/reactjs.png",
-      proficiency: 99,
+      proficiency: 97,
     },
     {
       id: 4,
@@ -27,13 +27,13 @@ const skillData = [
       id: 5,
       name: "Node.js",
       imageSrc: "/tech/nodejs.png",
-      proficiency: 90,
+      proficiency: 80,
     },
     {
       id: 6,
-      name: "Three",
-      imageSrc: "/tech/threejs.png",
-      proficiency: 45,
+      name: "Hardhat",
+      imageSrc: "/tech/hardhat.png",
+      proficiency: 86,
     },
     {
       id: 7,
@@ -45,7 +45,7 @@ const skillData = [
       id: 8,
       name: "Javascript",
       imageSrc: "/tech/javascript.png",
-      proficiency: 100,
+      proficiency: 95,
     },
     {
       id: 9,

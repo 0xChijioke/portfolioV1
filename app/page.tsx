@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     <div>
 
       {/* Hero */}
-      <section id="hero" className="snap-end relative h-screen">
+      <section id="hero" className="snap-start relative h-screen">
         <Hero />
         <StarsCanvas />
       </section>
