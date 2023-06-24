@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 TODO: Debug hydration issue.
 - Working on domain name for the portfolio site. chijoke.xyz $20 awaiting dollar card for payment.
 - Add a testmonial page and reachout to previous clients.
+- Implement contact form and remove the To top button from hero.
 Project status still pending and long overdue. Priority until shipped.
 
 ## Getting Started
