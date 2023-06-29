@@ -16,7 +16,6 @@ function Experience({}: Props) {
       <div className="w-full flex items-center mt-20 space-x-5 overflow-x-scroll p-10 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-violet-500 snap-x snap-center snap-mandatory">
         <ExperienceCard />
         <ExperienceCard />
-        <ExperienceCard />
       </div>
     </motion.div>
   )
