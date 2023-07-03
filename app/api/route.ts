@@ -1,6 +1,6 @@
 // app/api/route.ts
-import { db } from '@vercel/postgres';
-import { NextRequest } from 'next/server';
+import { db } from "@vercel/postgres";
+import { NextRequest } from "next/server";
 
 export const POST = async (request: NextRequest) => {
   const { title, description, image } = await request.json();
