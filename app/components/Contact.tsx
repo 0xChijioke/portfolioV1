@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import EarthCanvas from "./canvas/Earth";
+import { useRef, useState } from "react";
 
 type Props = {}
 
