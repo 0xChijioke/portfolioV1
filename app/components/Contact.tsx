@@ -5,6 +5,14 @@ import EarthCanvas from "./canvas/Earth";
 type Props = {}
 
 const Contact = (props: Props) => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  
   return (
     <motion.div
         initial={{ opacity: 0 }}
