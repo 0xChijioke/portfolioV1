@@ -71,20 +71,14 @@ const Contact = (props: Props) => {
                 <input
                   className="contactInput h-10"
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Full Name"
                 />
                 <input
                   className="contactInput h-10"
-                  type="text"
-                  placeholder="Last Name"
+                  type="email"
+                  placeholder="Email"
                 />
               </div>
-
-              <input
-                className="contactInput h-10"
-                type="text"
-                placeholder="Email"
-              />
 
               <textarea
                 className="contactInput"
