@@ -1,13 +1,13 @@
 "use client"
 // app/page.tsx
 import type { NextPage } from "next";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import StarsCanvas from "./components/canvas/Stars";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+import StarsCanvas from "../components/canvas/Stars";
 
 const Home: NextPage = () => {
   return (

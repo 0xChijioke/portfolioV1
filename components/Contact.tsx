@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import EarthCanvas from "./canvas/Earth";
 import { useForm, SubmitHandler } from "react-hook-form";

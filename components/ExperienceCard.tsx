@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import BG from "../../assets/JSgxkTBM_400x400.jpg";
-import BGLogo from "../../assets/BG.png";
+import BG from "../assets/JSgxkTBM_400x400.jpg";
+import BGLogo from "../assets/BG.png";
 import Image from "next/image";
 
 type Props = {}

@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 import skillData from "@/utils/skills";

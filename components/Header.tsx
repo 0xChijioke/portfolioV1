@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 

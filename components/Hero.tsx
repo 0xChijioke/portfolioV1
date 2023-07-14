@@ -1,9 +1,8 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import CJ from "../../assets/CJ.jpg";
+import CJ from "../assets/CJ.jpg";
 import { motion } from "framer-motion";
 
 

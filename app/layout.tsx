@@ -1,6 +1,6 @@
-import Header from '@/app/components/Header';
+import Header from '../components/Header';
 import './globals.css';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from '../components/ScrollToTop';
 // import localFont from 'next/font/local';
 
 // const myFont = localFont({ src: "./gotham-book-webfont.woff2", variable: "--font" })
