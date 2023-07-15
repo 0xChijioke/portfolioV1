@@ -16,7 +16,6 @@ function Hero({ }: Props) {
     words: [
       "Hey! I build web3 products.",
       "Very fast prototyping.",
-      "Superior Quality Guaranteed.",
       "Let's ship together!",
     ],
     loop: true,
