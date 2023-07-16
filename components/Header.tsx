@@ -28,7 +28,7 @@ function Header({}: Props) {
             {/* Social Icons */}
             <SocialIcon url="https://www.twitter.com/0xChijoke" fgColor="gray" bgColor="transperent" />
             <SocialIcon url="https://www.github.com/0xChijoke" fgColor="gray" bgColor="transperent" />
-            <SocialIcon url="https://www.linkedin.com/in/chijoke-ogbuanya/" fgColor="gray" bgColor="transperent" />
+            <SocialIcon url="https://discord.com/channels/0xchijoke" fgColor="gray" bgColor="transperent" />
         </motion.div>
 
         <motion.div
