@@ -16,8 +16,8 @@ function About({}: Props) {
                 <span className="underline decoration-[#F7AB0A]/50">little</span> background
                 </h4>
                 <p className="tracking-wider">
-                  I&apos;m CJ, a Web3 builder with a passion for creating stunning DApp frontends.     
-                   With over 5 years of experience in Fullstack Javascript development, I specialize in React, Next, Typescript, Tailwind and EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on WhatsApp or Twitter to discuss your project and how I can help bring it to life!
+                  I&apos;m CJ, a Web3 builder passionate about creating stunning DApp frontends.     
+                   With over 5 years of experience in Fullstack Javascript development, I specialize in React, Next, Typescript, Tailwind and everything EVM. When I&apos;m not buidling, I love spending time in nature, working out, or just relaxing. Let&apos;s connect on Twitter to discuss your project and how I can help bring it to life!
                 </p>
             </div>
     </motion.div>
