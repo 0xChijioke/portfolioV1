@@ -1,6 +1,6 @@
 {
   "name": "portfoliov1",
-  "author": "chijokeogbuanya@gmail.com"
+  "author": "chijokeogbuanya@gmail.com",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -55,5 +55,5 @@
   "devDependencies": {
     "tailwind-scrollbar": "^3.0.4"
   }
-  "license": "MIT",
+  "license": "MIT"
 }
