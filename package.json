@@ -1,7 +1,28 @@
 {
   "name": "portfoliov1",
+  "author": "chijokeogbuanya@gmail.com"
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xChijoke/portfolioV1.git"
+  },
+  "keywords": 
+  [
+    "portfolio", 
+    "frontend",
+    "developer",
+    "react", 
+    "nextjs", 
+    "typescript", 
+    "ethereum", 
+    "web3",
+    "builder"
+  ]
+}
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -34,4 +55,5 @@
   "devDependencies": {
     "tailwind-scrollbar": "^3.0.4"
   }
+  "license": "MIT",
 }
