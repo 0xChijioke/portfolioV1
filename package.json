@@ -10,19 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/0xChijoke/portfolioV1.git"
   },
-  "keywords": 
-  [
-    "portfolio", 
+  "keywords": [
+    "portfolio",
     "frontend",
     "developer",
-    "react", 
-    "nextjs", 
-    "typescript", 
-    "ethereum", 
+    "react",
+    "nextjs",
+    "typescript",
+    "ethereum",
     "web3",
     "builder"
-  ]
-}
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -54,6 +52,6 @@
   },
   "devDependencies": {
     "tailwind-scrollbar": "^3.0.4"
-  }
+  },
   "license": "MIT"
 }
