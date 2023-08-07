@@ -14,7 +14,7 @@ function Hero({ }: Props) {
   
   const [text, count] = useTypewriter({
     words: [
-      "Hey! I build web3 products.",
+      "Hey! I build on Ethereum.",
       "Very fast prototyping.",
       "Let's ship together!",
     ],
