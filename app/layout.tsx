@@ -6,8 +6,8 @@ import ScrollToTop from '../components/ScrollToTop';
 // const myFont = localFont({ src: "./gotham-book-webfont.woff2", variable: "--font" })
 
 export const metadata = {
-  title: 'Gordswork',
-  description: 'A work of creativity.',
+  title: 'chijoke.eth',
+  description: 'Building Dapps.',
 }
 
 export default function RootLayout({
