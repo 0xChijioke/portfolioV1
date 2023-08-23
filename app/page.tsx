@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       {/* Hero */}
       <section id="hero" className="snap-start relative h-screen">
         <Hero />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
       </section>
 
       {/* About */}
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       {/* Contact */}
       <section id="contact" className="snap-start relative h-screen">
         <Contact />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
       </section>
 
     </div>

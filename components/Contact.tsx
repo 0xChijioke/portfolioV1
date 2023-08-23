@@ -43,7 +43,7 @@ const Contact = () => {
 
         <div className="w-full flex flex-row-reverse justify-center">
 
-          <motion.div
+          {/* <motion.div
               initial={{
                   x: -200,
                   opacity: 0,
@@ -54,11 +54,11 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="absolute lg:relative hidden  z-0 lg:flex justify-center lg:w-[45%]">
-            <EarthCanvas />
-          </motion.div>
+             <EarthCanvas />
+          </motion.div> */}
 
 
-          <div className="flex flex-col  lg:w-[50%] mx-5 my-10 p-5 z-10 items-center">
+          <div className="flex flex-col  w-full mx-5 my-10 p-5 z-10 items-center">
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-3 px-5 w-auto">
               <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row">
                 <input
