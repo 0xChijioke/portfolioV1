@@ -58,7 +58,7 @@ function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, id: string)
         />
         <div className="z-20 space-y-9 px-2">
           <h2 className="text-base uppercase text-gray-500 pb-2 tracking-[15px]  whitespace-normal">
-              Chijoke Ogbuanya
+              Chijioke Ogbuanya
           </h2>
           <div className="flex-grow w-full justify-center items-center">
             <h1 className="text-xl lg:text-4xl font-semibold px-5">
