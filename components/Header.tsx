@@ -26,9 +26,9 @@ function Header({}: Props) {
         }}
         className="flex flex-row space-x-2 items-center">
             {/* Social Icons */}
-            <SocialIcon url="https://www.twitter.com/0xChijoke" fgColor="gray" bgColor="transperent" />
-            <SocialIcon url="https://www.github.com/0xChijoke" fgColor="gray" bgColor="transperent" />
-            <SocialIcon url="https://discord.com/channels/0xchijoke" fgColor="gray" bgColor="transperent" />
+            <SocialIcon url="https://twitter.com/0xChijioke" fgColor="gray" bgColor="transperent" />
+            <SocialIcon url="https://github.com/0xChijioke" fgColor="gray" bgColor="transperent" />
+            <SocialIcon url="https://discord.com/channels/0xchijioke" fgColor="gray" bgColor="transperent" />
         </motion.div>
 
         <motion.div
